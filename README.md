@@ -1,6 +1,6 @@
 # Facebook Comment Automation (n8n)
 
-An n8n workflow that automatically moderates and replies to Facebook Page comments for **Kasri Oil**, a pain-relief-oil brand page. Positive/neutral comments get an AI-generated public reply plus a private inbox message with offer details; negative, complaint, or abusive comments are automatically deleted.
+An n8n workflow that automatically moderates and replies to Facebook Page comments for a pain-relief-oil brand's Facebook page. Positive/neutral comments get an AI-generated public reply plus a private inbox message with offer details; negative, complaint, or abusive comments are automatically deleted.
 
 ## What it does
 
@@ -16,7 +16,7 @@ An n8n workflow that automatically moderates and replies to Facebook Page commen
 ## Architecture
 
 ```
-Facebook Page (kasrioil)
+Facebook Page
         │  webhook (feed field)
         ▼
    n8n Webhook node
