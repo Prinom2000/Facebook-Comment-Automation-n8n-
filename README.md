@@ -1,6 +1,7 @@
 # Facebook Comment Automation (n8n)
 
 An n8n workflow that automatically moderates and replies to Facebook Page comments for a pain-relief-oil brand's Facebook page. Positive/neutral comments get an AI-generated public reply plus a private inbox message with offer details; negative, complaint, or abusive comments are automatically deleted.
+<img width="1591" height="616" alt="image" src="https://github.com/user-attachments/assets/e2f6afcc-62c8-4f09-b400-20331935a42e" />
 
 ## What it does
 
