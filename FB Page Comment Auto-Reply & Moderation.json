@@ -10,10 +10,7 @@
       },
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2.1,
-      "position": [
-        32,
-        912
-      ],
+      "position": [32, 912],
       "id": "4fa7ce10-fb0d-4714-9133-86dc5500d664",
       "name": "Webhook",
       "webhookId": "0fbaead2-e4b9-4245-942a-dd5d89c4570e"
@@ -26,10 +23,7 @@
       },
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.4,
-      "position": [
-        576,
-        736
-      ],
+      "position": [576, 736],
       "id": "9fbaaf02-fe0f-4820-bc4e-d09afbd00664",
       "name": "Respond to Webhook"
     },
@@ -55,7 +49,7 @@
             {
               "id": "9a21f99d-e19c-42e4-97e4-ee8219b44f28",
               "leftValue": "={{ $json.query['hub.verify_token'] }}",
-              "rightValue": "kasritoken",
+              "rightValue": "YOUR_WEBHOOK_VERIFY_TOKEN",
               "operator": {
                 "type": "string",
                 "operation": "equals"
@@ -68,10 +62,7 @@
       },
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
-      "position": [
-        336,
-        816
-      ],
+      "position": [336, 816],
       "id": "12b9dd0b-9324-46a0-9757-1b4f358effd8",
       "name": "If"
     },
@@ -83,10 +74,7 @@
       },
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.4,
-      "position": [
-        576,
-        880
-      ],
+      "position": [576, 880],
       "id": "f4b46770-2dcd-4ad6-b1df-87bebba719d0",
       "name": "Respond to Webhook1"
     },
@@ -101,10 +89,7 @@
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3,
-      "position": [
-        1040,
-        1072
-      ],
+      "position": [1040, 1072],
       "id": "13350f94-13c1-4586-9ab0-d8bd2610abe1",
       "name": "AI Agent"
     },
@@ -121,18 +106,9 @@
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1.3,
-      "position": [
-        688,
-        1280
-      ],
+      "position": [688, 1280],
       "id": "24a35e79-0038-487d-ae67-51b98c503c05",
-      "name": "OpenAI Chat Model",
-      "credentials": {
-        "openAiApi": {
-          "id": "aBJTNhj3LPDVM39W",
-          "name": "OpenAI account"
-        }
-      }
+      "name": "OpenAI Chat Model"
     },
     {
       "parameters": {
@@ -140,10 +116,7 @@
       },
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.3,
-      "position": [
-        1280,
-        1264
-      ],
+      "position": [1280, 1264],
       "id": "6f4cb80c-3a89-41fa-94f1-d30d755a5a24",
       "name": "Structured Output Parser"
     },
@@ -173,10 +146,7 @@
       },
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
-      "position": [
-        1392,
-        1072
-      ],
+      "position": [1392, 1072],
       "id": "553cf299-5b84-4fe0-952f-975600ebda4d",
       "name": "If1"
     },
@@ -189,7 +159,7 @@
           "parameters": [
             {
               "name": "access_token",
-              "value": "EAAYfbHx36QsBShdX0buoTYEcQ0hecf5l5oBclwZBqzG1AtkYxbuKMFuv8bxYytFfwDkPvgsTQnK4J8ZAa6pabT1u1k1uWUZCeHU48vEt7aOSjf4IgjmN4ms5TZCsjM9eYcGVlb93v4IDdleOdMkdB3z9YNQiiiDZCfpxmsTXsCgeKZCLbBZBZB2d49YAANDM7KVpJPb0ReZBWCo3U8XtKEcgY"
+              "value": "YOUR_FACEBOOK_PAGE_ACCESS_TOKEN"
             }
           ]
         },
@@ -207,10 +177,7 @@
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
-      "position": [
-        1600,
-        976
-      ],
+      "position": [1600, 976],
       "id": "f3b1c47d-b719-4363-b7a3-d12dd5c89e4e",
       "name": "HTTP Request"
     },
@@ -223,7 +190,7 @@
           "parameters": [
             {
               "name": "access_token",
-              "value": "EAAYfbHx36QsBShdX0buoTYEcQ0hecf5l5oBclwZBqzG1AtkYxbuKMFuv8bxYytFfwDkPvgsTQnK4J8ZAa6pabT1u1k1uWUZCeHU48vEt7aOSjf4IgjmN4ms5TZCsjM9eYcGVlb93v4IDdleOdMkdB3z9YNQiiiDZCfpxmsTXsCgeKZCLbBZBZB2d49YAANDM7KVpJPb0ReZBWCo3U8XtKEcgY"
+              "value": "YOUR_FACEBOOK_PAGE_ACCESS_TOKEN"
             }
           ]
         },
@@ -231,10 +198,7 @@
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
-      "position": [
-        1600,
-        1280
-      ],
+      "position": [1600, 1280],
       "id": "16960dfe-28ec-49b2-ab45-ec4c3891f5fb",
       "name": "HTTP Request1"
     },
@@ -244,18 +208,9 @@
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1.1,
-      "position": [
-        848,
-        1280
-      ],
+      "position": [848, 1280],
       "id": "be0700df-6095-48be-8d49-80e2ca5524cd",
-      "name": "Google Gemini Chat Model",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Lf7ZSU5KSyy63MsY",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
+      "name": "Google Gemini Chat Model"
     },
     {
       "parameters": {
@@ -294,10 +249,7 @@
       },
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
-      "position": [
-        336,
-        1088
-      ],
+      "position": [336, 1088],
       "id": "a65ad164-d4a0-4534-bbe4-419c4130a593",
       "name": "If2"
     },
@@ -306,17 +258,15 @@
         "operation": "append",
         "documentId": {
           "__rl": true,
-          "value": "1Oe6CrdNvprOee8D81_uRdXvMFuG1FJeTJrwoM1C24G8",
+          "value": "YOUR_GOOGLE_SHEET_ID",
           "mode": "list",
-          "cachedResultName": "Kesri oil Ai comment reply",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Oe6CrdNvprOee8D81_uRdXvMFuG1FJeTJrwoM1C24G8/edit?usp=drivesdk"
+          "cachedResultName": "Kesri oil Ai comment reply"
         },
         "sheetName": {
           "__rl": true,
           "value": "gid=0",
           "mode": "list",
-          "cachedResultName": "Sheet1",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Oe6CrdNvprOee8D81_uRdXvMFuG1FJeTJrwoM1C24G8/edit#gid=0"
+          "cachedResultName": "Sheet1"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -376,35 +326,24 @@
       },
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
-      "position": [
-        1808,
-        976
-      ],
+      "position": [1808, 976],
       "id": "22294bfb-0269-4cb0-b581-ce6998ebd048",
-      "name": "Append row in sheet",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "ZgmuvzLGYN1rdAcN",
-          "name": "Google Sheets account"
-        }
-      }
+      "name": "Append row in sheet"
     },
     {
       "parameters": {
         "operation": "append",
         "documentId": {
           "__rl": true,
-          "value": "1Oe6CrdNvprOee8D81_uRdXvMFuG1FJeTJrwoM1C24G8",
+          "value": "YOUR_GOOGLE_SHEET_ID",
           "mode": "list",
-          "cachedResultName": "Kesri oil Ai comment reply",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Oe6CrdNvprOee8D81_uRdXvMFuG1FJeTJrwoM1C24G8/edit?usp=drivesdk"
+          "cachedResultName": "Kesri oil Ai comment reply"
         },
         "sheetName": {
           "__rl": true,
           "value": "gid=0",
           "mode": "list",
-          "cachedResultName": "Sheet1",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Oe6CrdNvprOee8D81_uRdXvMFuG1FJeTJrwoM1C24G8/edit#gid=0"
+          "cachedResultName": "Sheet1"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -464,18 +403,9 @@
       },
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
-      "position": [
-        1808,
-        1280
-      ],
+      "position": [1808, 1280],
       "id": "4f19ae96-92ce-4468-a7ca-a47d302d8992",
-      "name": "Append row in sheet1",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "ZgmuvzLGYN1rdAcN",
-          "name": "Google Sheets account"
-        }
-      }
+      "name": "Append row in sheet1"
     },
     {
       "parameters": {
@@ -503,10 +433,7 @@
       },
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
-      "position": [
-        800,
-        1072
-      ],
+      "position": [800, 1072],
       "id": "09c463c6-145c-44da-b258-4d445112ff2d",
       "name": "If3"
     },
@@ -518,10 +445,7 @@
       },
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.5,
-      "position": [
-        176,
-        1088
-      ],
+      "position": [176, 1088],
       "id": "a96a0d5f-b0ba-4e53-82fd-48753c753a7e",
       "name": "Respond to Webhook2"
     },
@@ -553,10 +477,7 @@
       },
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
-      "position": [
-        576,
-        1072
-      ],
+      "position": [576, 1072],
       "id": "b4e2b181-c60e-407b-9042-900d839c0bb1",
       "name": "Edit Fields"
     },
@@ -567,29 +488,20 @@
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
       "typeVersion": 1,
-      "position": [
-        1008,
-        1280
-      ],
+      "position": [1008, 1280],
       "id": "b7543fd1-0c79-40d4-8897-b0b7c28bf527",
-      "name": "Groq Chat Model",
-      "credentials": {
-        "groqApi": {
-          "id": "zEAdGdwhQ3i3eQ4R",
-          "name": "Groq account"
-        }
-      }
+      "name": "Groq Chat Model"
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://graph.facebook.com/v21.0/534708103049392/messages",
+        "url": "=https://graph.facebook.com/v21.0/YOUR_PAGE_ID/messages",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
             {
               "name": "access_token",
-              "value": "EAAYfbHx36QsBShdX0buoTYEcQ0hecf5l5oBclwZBqzG1AtkYxbuKMFuv8bxYytFfwDkPvgsTQnK4J8ZAa6pabT1u1k1uWUZCeHU48vEt7aOSjf4IgjmN4ms5TZCsjM9eYcGVlb93v4IDdleOdMkdB3z9YNQiiiDZCfpxmsTXsCgeKZCLbBZBZB2d49YAANDM7KVpJPb0ReZBWCo3U8XtKEcgY"
+              "value": "YOUR_FACEBOOK_PAGE_ACCESS_TOKEN"
             }
           ]
         },
@@ -600,10 +512,7 @@
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
-      "position": [
-        1600,
-        1120
-      ],
+      "position": [1600, 1120],
       "id": "073df163-9ffc-49e6-8d1f-80944f7ca2c8",
       "name": "Send Private Reply"
     },
@@ -618,10 +527,7 @@
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3,
-      "position": [
-        1008,
-        704
-      ],
+      "position": [1008, 704],
       "id": "d1a206aa-095e-4b3b-8dfe-fab829fb41ff",
       "name": "AI Agent1"
     },
@@ -631,33 +537,21 @@
       },
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.3,
-      "position": [
-        1248,
-        896
-      ],
+      "position": [1248, 896],
       "id": "3c53a756-3f8b-473c-b278-9ed3e46b5050",
       "name": "Structured Output Parser1"
     },
     {
       "parameters": {
         "operation": "get",
-        "documentURL": "1EuzzURgWk7oqxDLFKgR47FF1A58rf9DRW0EcuN9_L3Q",
+        "documentURL": "YOUR_GOOGLE_DOC_ID",
         "simple": false
       },
       "type": "n8n-nodes-base.googleDocsTool",
       "typeVersion": 2,
-      "position": [
-        1104,
-        912
-      ],
+      "position": [1104, 912],
       "id": "ee5a0c78-cff4-4db6-a324-80cc9fe4d346",
-      "name": "Company Info1",
-      "credentials": {
-        "googleDocsOAuth2Api": {
-          "id": "YnfvIK9c8en72o5C",
-          "name": "Google Docs account"
-        }
-      }
+      "name": "Company Info1"
     },
     {
       "parameters": {
@@ -666,18 +560,9 @@
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
       "typeVersion": 1,
-      "position": [
-        976,
-        912
-      ],
+      "position": [976, 912],
       "id": "8016c88b-cce7-4ae0-a5db-7f439abc8b38",
-      "name": "Groq Chat Model1",
-      "credentials": {
-        "groqApi": {
-          "id": "zEAdGdwhQ3i3eQ4R",
-          "name": "Groq account"
-        }
-      }
+      "name": "Groq Chat Model1"
     },
     {
       "parameters": {
@@ -687,10 +572,7 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
-      "position": [
-        896,
-        640
-      ],
+      "position": [896, 640],
       "id": "c3bc3712-b42f-4d9a-b315-41009d6ae076",
       "name": "Sticky Note"
     }
@@ -699,215 +581,97 @@
   "connections": {
     "Webhook": {
       "main": [
-        [
-          {
-            "node": "If",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Respond to Webhook2",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "If", "type": "main", "index": 0 }],
+        [{ "node": "Respond to Webhook2", "type": "main", "index": 0 }]
       ]
     },
     "If": {
       "main": [
-        [
-          {
-            "node": "Respond to Webhook",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Respond to Webhook1",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "Respond to Webhook", "type": "main", "index": 0 }],
+        [{ "node": "Respond to Webhook1", "type": "main", "index": 0 }]
       ]
     },
     "AI Agent": {
       "main": [
-        [
-          {
-            "node": "If1",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "If1", "type": "main", "index": 0 }]
       ]
     },
     "OpenAI Chat Model": {
-      "ai_languageModel": [
-        []
-      ]
+      "ai_languageModel": [[]]
     },
     "Structured Output Parser": {
       "ai_outputParser": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_outputParser",
-            "index": 0
-          }
-        ]
+        [{ "node": "AI Agent", "type": "ai_outputParser", "index": 0 }]
       ]
     },
     "If1": {
       "main": [
         [
-          {
-            "node": "HTTP Request",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Send Private Reply",
-            "type": "main",
-            "index": 0
-          }
+          { "node": "HTTP Request", "type": "main", "index": 0 },
+          { "node": "Send Private Reply", "type": "main", "index": 0 }
         ],
-        [
-          {
-            "node": "HTTP Request1",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "HTTP Request1", "type": "main", "index": 0 }]
       ]
     },
     "Google Gemini Chat Model": {
-      "ai_languageModel": [
-        []
-      ]
+      "ai_languageModel": [[]]
     },
     "If2": {
       "main": [
-        [
-          {
-            "node": "Edit Fields",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "Edit Fields", "type": "main", "index": 0 }]
       ]
     },
     "HTTP Request": {
       "main": [
-        [
-          {
-            "node": "Append row in sheet",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "Append row in sheet", "type": "main", "index": 0 }]
       ]
     },
     "HTTP Request1": {
       "main": [
-        [
-          {
-            "node": "Append row in sheet1",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "Append row in sheet1", "type": "main", "index": 0 }]
       ]
     },
     "If3": {
       "main": [
         [],
-        [
-          {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "AI Agent", "type": "main", "index": 0 }]
       ]
     },
     "Respond to Webhook2": {
       "main": [
-        [
-          {
-            "node": "If2",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "If2", "type": "main", "index": 0 }]
       ]
     },
     "Edit Fields": {
       "main": [
-        [
-          {
-            "node": "If3",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "If3", "type": "main", "index": 0 }]
       ]
     },
     "Groq Chat Model": {
       "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
+        [{ "node": "AI Agent", "type": "ai_languageModel", "index": 0 }]
       ]
     },
     "Append row in sheet": {
-      "main": [
-        []
-      ]
+      "main": [[]]
     },
     "Structured Output Parser1": {
       "ai_outputParser": [
-        [
-          {
-            "node": "AI Agent1",
-            "type": "ai_outputParser",
-            "index": 0
-          }
-        ]
+        [{ "node": "AI Agent1", "type": "ai_outputParser", "index": 0 }]
       ]
     },
     "Company Info1": {
       "ai_tool": [
-        [
-          {
-            "node": "AI Agent1",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
+        [{ "node": "AI Agent1", "type": "ai_tool", "index": 0 }]
       ]
     },
     "Groq Chat Model1": {
       "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent1",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
+        [{ "node": "AI Agent1", "type": "ai_languageModel", "index": 0 }]
       ]
     },
     "AI Agent1": {
-      "main": [
-        []
-      ]
+      "main": [[]]
     }
   },
   "active": true,
@@ -917,10 +681,8 @@
   },
   "versionId": "06b97ca4-4e9d-48da-ad32-f708d3862e0c",
   "meta": {
-    "templateCredsSetupCompleted": true,
-    "instanceId": "bf8a662ff634faacc3d58804a0ab66e91780218e86ee2e0e63dfe4bff87df8e5"
+    "templateCredsSetupCompleted": true
   },
-  "nodeGroups": [],
   "id": "gw4qTWhN4eTRvdZs",
   "tags": []
 }
